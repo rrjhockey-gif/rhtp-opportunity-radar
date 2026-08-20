@@ -135,7 +135,7 @@
     const lastScrub = state.meta.lastScrubAt ? timeAgo(state.meta.lastScrubAt) : "never run yet";
     el.innerHTML = `
       <span style="display:inline-flex; width:14px; height:14px; color:var(--color-accent);">${ICONS.scan}</span>
-      <span>Last scrub ${esc(lastScrub)} - source <a href="https://rhtp.amemobile.net" target="_blank" rel="noopener">rhtp.amemobile.net</a></span>
+      <span>Last scrub ${esc(lastScrub)} - source <a href="https://www.grants.gov" target="_blank" rel="noopener">grants.gov</a> (federal only)</span>
       <span class="dot"></span>
       <span>Edits saved to this browser only - see Admin tab</span>`;
   }
@@ -180,7 +180,7 @@
         <td>${fitTag(op.ingramFit, fitLabel(op.ingramFit))}</td>
         <td class="cell-muted">${op.setAside ? esc(op.setAside) : "-"}</td>
         <td class="cell-mono">${esc(op.award)}</td>
-        <td class="cell-mono">${esc(op.deadline)}</td>
+        <td class="cell-mono">${esc(op.deadline) || (op.rcjStatus === "UPCOMING" ? "TBD (forecast)" : "-")}</td>
         <td>${statusTag(op.status)}</td>
       </tr>`).join("");
 
@@ -277,13 +277,13 @@
         <div class="panel">
           ${corners}
           <div class="panel-head">
-            <div class="kicker">Daily scrub log - rhtp.amemobile.net (via Rural Care Journey API)</div>
+            <div class="kicker">Daily scrub log - grants.gov (federal only, see README for coverage gaps)</div>
             <a class="btn btn-secondary" href="${esc(guessActionsUrl())}" target="_blank" rel="noopener">${ICONS.scan.replace("<svg", '<svg width="14" height="14"')} Open Actions tab</a>
           </div>
           <div class="scrub-log">${logRows}</div>
           <div class="caveat">
             <div class="kicker">${ICONS.info.replace("<svg", '<svg width="12" height="12"')} How this works</div>
-            <p>A GitHub Actions workflow runs daily, pulls from the Rural Care Journey API, auto-tags each release with rule-based keyword matching (no paid LLM calls), and commits the result here. Trigger an on-demand run from the repo's Actions tab (workflow: "Daily scrub").</p>
+            <p>A GitHub Actions workflow runs daily, pulls from grants.gov's free public API, auto-tags each release with rule-based keyword matching (no paid LLM calls), and commits the result here. Trigger an on-demand run from the repo's Actions tab (workflow: "Daily scrub").</p>
           </div>
           <div class="caveat" style="background:var(--color-blue-soft);">
             <div class="kicker" style="color:var(--color-blue-soft-text);">${ICONS.info.replace("<svg", '<svg width="12" height="12"')} Partner / OEM / status edits are local-only</div>
@@ -329,7 +329,7 @@
               <div><div class="kicker">Agency</div><div>${esc(op.agency)}</div></div>
               <div><div class="kicker">Award</div><div>${esc(op.award)}</div></div>
               <div><div class="kicker">Released</div><div>${esc(op.released) || "-"}</div></div>
-              <div><div class="kicker">Deadline</div><div>${esc(op.deadline) || "-"}</div></div>
+              <div><div class="kicker">Deadline</div><div>${esc(op.deadline) || (op.rcjStatus === "UPCOMING" ? "TBD (forecast)" : "-")}</div></div>
             </div>
             <div style="margin-bottom:16px;"><div class="kicker">Eligible states</div><div>${esc((op.states && op.states.length ? op.states : ["Nationwide"]).join(", "))}</div></div>
             <div class="kicker">Summary</div>

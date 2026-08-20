@@ -13,7 +13,7 @@ const SOLUTION_KEYWORDS = {
 };
 
 const HARDWARE_KEYWORDS = {
-  "Networking": ["network", "broadband", "router", "gateway", "wan ", "wi-fi", "wifi", "connectivity", "bandwidth"],
+  "Networking": ["networking equipment", "networking hardware", "networking gear", "network infrastructure", "network segmentation", "broadband", "router", "gateway", "wan ", "wi-fi", "wifi", "connectivity", "bandwidth"],
   "Security Appliances": ["firewall", "segmentation", "endpoint security", "intrusion", "detection & response", "security appliance"],
   "Endpoint & Workstation": ["workstation", "laptop", "desktop", "device refresh", "field office", "end-user device"],
   "Video & RPM Hardware": ["video endpoint", "camera", "remote monitoring device", "rpm device", "cellular gateway", "peripheral"],

@@ -20,7 +20,6 @@ jobs:
 
       - name: Run scraper
         env:
-          RCJ_API_KEY: ${{ secrets.RCJ_API_KEY }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: node scripts/scrape.mjs
 
