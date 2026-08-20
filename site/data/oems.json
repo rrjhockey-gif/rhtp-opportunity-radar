@@ -1,0 +1,8 @@
+[
+  { "name": "Cisco Systems", "categories": ["Networking", "Security Appliances"], "specialty": "Routing, switching, SD-WAN & Meraki security appliances" },
+  { "name": "Fortinet", "categories": ["Security Appliances"], "specialty": "Next-gen firewalls & network segmentation" },
+  { "name": "HPE Aruba Networking", "categories": ["Networking"], "specialty": "Wired/wireless access & rural WAN" },
+  { "name": "Dell Technologies", "categories": ["Servers & Storage", "Endpoint & Workstation"], "specialty": "Servers, storage & clinical workstations" },
+  { "name": "Poly (HP)", "categories": ["Video & RPM Hardware"], "specialty": "Video endpoints & remote monitoring peripherals" },
+  { "name": "Cradlepoint", "categories": ["Networking", "Video & RPM Hardware"], "specialty": "Cellular gateways & edge routers for rural sites" }
+]

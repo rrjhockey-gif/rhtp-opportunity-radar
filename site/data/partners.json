@@ -1,0 +1,8 @@
+[
+  { "name": "Meridian Health IT", "type": "SI", "focus": "Telehealth & EHR integration", "states": ["ID", "MT", "WY"], "services": ["Telehealth", "Data & Analytics"], "software": "" },
+  { "name": "Vantage Point Systems", "type": "Reseller", "focus": "Networking hardware", "states": ["Nationwide"], "services": ["Cyber Security", "Cloud Infrastructure"], "software": "" },
+  { "name": "Northstar Federal Solutions", "type": "SI", "focus": "Cloud migration", "states": ["Nationwide"], "services": ["Cloud Infrastructure", "Data & Analytics"], "software": "" },
+  { "name": "Clearwater Analytics Partners", "type": "ISV", "focus": "Health data platforms", "states": ["Nationwide"], "services": ["Data & Analytics"], "software": "ClearView Analytics Suite" },
+  { "name": "SecureRing Cyber", "type": "ISV", "focus": "Zero-trust & compliance", "states": ["OH", "KY", "WV"], "services": ["Cyber Security"], "software": "SecureRing Sentinel" },
+  { "name": "BlueRiver Networks", "type": "Reseller", "focus": "Rural connectivity hardware", "states": ["Nationwide"], "services": ["Telehealth", "Cloud Infrastructure"], "software": "" }
+]
