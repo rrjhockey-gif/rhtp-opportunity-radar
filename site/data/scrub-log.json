@@ -1,5 +1,10 @@
 [
   {
+    "icon": "check",
+    "text": "Daily scrub completed - no changes detected on 8 tracked listings",
+    "time": "2026-08-21T11:57:03.440Z"
+  },
+  {
     "icon": "found",
     "text": "Scrub found 1 new release: \"Forecast to Publish a Notice of Funding Opportunity Announcement for Addressing Determinants of Health Disparities Among Rural Populations (R01 - Clinical Trial Optional)\" (National Institutes of Health)",
     "time": "2026-08-20T21:09:11.846075+00:00"
