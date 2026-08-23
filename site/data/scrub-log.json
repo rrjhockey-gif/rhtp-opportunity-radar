@@ -1,5 +1,10 @@
 [
   {
+    "icon": "check",
+    "text": "Daily scrub completed - no changes detected on 10 tracked listings",
+    "time": "2026-08-23T11:42:35.772Z"
+  },
+  {
     "icon": "found",
     "text": "Scrub found 1 new release: \"Rural Communities Opioid Response Program - Overdose Response\" (Health Resources and Services Administration)",
     "time": "2026-08-22T11:42:04.830Z"
